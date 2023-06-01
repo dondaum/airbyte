@@ -1,0 +1,20 @@
+data:
+  connectorSubtype: api
+  connectorType: source
+  definitionId: aaaeb3a0-007b-11ee-be56-0242ac120002 
+  dockerImageTag: 0.0.1
+  dockerRepository: airbyte/source_icecat
+  githubIssueLabel: source-icecat
+  icon: icecat.svg
+  license: MIT
+  name: Icecat
+  registries:
+    cloud:
+      enabled: false
+    oss:
+      enabled: true
+  releaseStage: alpha
+  documentationUrl: https://docs.airbyte.com/integrations/sources/icecat
+  tags:
+    - language:python
+metadataSpecVersion: "1.0"

@@ -1,12 +1,151 @@
-documentationUrl: https://docsurl.com
+documentationUrl: https://docs.airbyte.com/integrations/sources/icecat
 connectionSpecification:
   $schema: http://json-schema.org/draft-07/schema#
   title: Icecat Spec
   type: object
   required:
-    - TODO
+    - catalog_type
+    - catalog_language
+    - identifier_type
+    - username
+    - password
+  additionalProperties: true
   properties:
-    # 'TODO: This schema defines the configuration required for the source. This usually involves metadata such as database and/or authentication information.':
-    TODO:
+    catalog_type:
       type: string
-      description: describe me
+      description: >-
+        Type of catalog must be either the open or full catalog
+      enum: 
+        - Open Icecat
+        - Full Icecat
+      order: 0
+    catalog_language:
+      type: string
+      description: >-
+        Language code for icecat catalog for all available codes find them <a
+        href="https://iceclog.com/icecat-locales-and-language-code-table/">here</a>
+      enum:
+        - 'AR'
+        - 'BG'
+        - 'BN'
+        - 'BR'
+        - 'CA'
+        - 'CZ'
+        - 'DE'
+        - 'DE_AT'
+        - 'DE_BE'
+        - 'DE_CH'
+        - 'DK'
+        - 'EL'
+        - 'EN'
+        - 'EN_AE'
+        - 'EN_AU'
+        - 'EN_CA'
+        - 'EN_ID'
+        - 'EN_IE'
+        - 'EN_IN'
+        - 'EN_MY'
+        - 'EN_NZ'
+        - 'EN_PH'
+        - 'EN_SA'
+        - 'EN_SG'
+        - 'EN_ZA'
+        - 'ES'
+        - 'ES_AR'
+        - 'ES_CL'
+        - 'ES_CO'
+        - 'ES_MX'
+        - 'ES_PE'
+        - 'ET'
+        - 'FA'
+        - 'FI'
+        - 'FL_PH'
+        - 'FR'
+        - 'FR_BE'
+        - 'FR_CA'
+        - 'FR_CH'
+        - 'HE'
+        - 'HI'
+        - 'HR'
+        - 'HU'
+        - 'ID'
+        - 'IT'
+        - 'IT_CH'
+        - 'JA'
+        - 'KA'
+        - 'KN'
+        - 'KO'
+        - 'LT'
+        - 'LV'
+        - 'MK'
+        - 'ML'
+        - 'MR'
+        - 'MS'
+        - 'NL'
+        - 'NL_BE'
+        - 'NO'
+        - 'PL'
+        - 'PT'
+        - 'RO'
+        - 'RU'
+        - 'RU_UA'
+        - 'SK'
+        - 'SL'
+        - 'SR'
+        - 'SV'
+        - 'TA'
+        - 'TE'
+        - 'TH'
+        - 'TR'
+        - 'UK'
+        - 'US'
+        - 'VI'
+        - 'ZH'
+        - 'ZH_TW'
+      order: 1
+    identifier_type:
+      type: object
+      description: >-
+        Product identifier. Can be either a GTIN such as a EAN UPC or JAN or the icecat
+        product id. 
+        href="https://iceclog.com/icecat-locales-and-language-code-table/">here</a>
+
+      oneOf:
+        - title: GTIN
+          type: object
+          description: >-
+            Use GTIN as identifier
+          required:
+            - "type"
+            - "value"
+          properties:
+            type:
+              type: "string"
+              const: "GTIN"
+            value:
+              type: "string"
+
+        - title: Icecat product id
+          type: object
+          description: >-
+            Use icecat product id as identifier
+          required:
+            - "type"
+            - "value"
+          properties:
+            type:
+              type: "string"
+              const: "productid"
+            value:
+              type: "string"
+      order: 2
+    username:
+      type: string
+      description: Icecat user
+      order: 3
+    password:
+      type: string
+      description: Icecat password
+      airbyte_secret: True
+      order: 4
+

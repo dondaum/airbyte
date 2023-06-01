@@ -1,3 +1,10 @@
 {
-  "todo-wrong-field": "this should be an incomplete config file, used in standard tests"
+    "catalog_type": "Open Icecat",
+    "catalog_language": "ASD",
+    "identifier_type": {
+        "type" : "productid",
+        "value": "97824404"
+    },
+    "username": "user",
+    "password": "pwd"
 }

@@ -1,9 +1,9 @@
 {
     "catalog_type": "Open Icecat",
-    "catalog_language": "FR",
+    "catalog_language": "DE",
     "identifier_type": {
         "type" : "productid",
-        "value": "97824404"
+        "value": "1438185"
     },
     "username": "user",
     "password": "pwd"
