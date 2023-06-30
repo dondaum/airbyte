@@ -1,0 +1,33 @@
+documentationUrl: https://docs.airbyte.com/integrations/sources/icecat-product
+connectionSpecification:
+  $schema: http://json-schema.org/draft-07/schema#
+  title: Icecat Product Catalog
+  type: object
+  required:
+    - icecat_product_id
+    - username
+    - language
+  additionalProperties: true
+  properties:
+    icecat_product_id:
+      type: string
+      description: icecat product id
+      pattern: ^[0-9]
+      examples:
+        - 109600238
+        - 89774009
+        - 112186234
+    username:
+      type: string
+      description: icecat user account to user while pulling the product json
+      examples:
+        - test-user-nj
+        - levecq
+    language:
+      type: string
+      description: product catalog language
+      default: DE
+      examples:
+        - DE
+        - IT
+        - EN

@@ -1,0 +1,672 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "icecat product",
+  "type": "object",
+  "properties": {
+    "Dictionary": {
+      "type": "object",
+      "properties": {
+        "zoom_panel_dragg": {
+          "type": "string"
+        },
+        "specs": {
+          "type": "string"
+        },
+        "link_integrate_desk": {
+          "type": "string"
+        },
+        "release_date": {
+          "type": "string"
+        },
+        "model_name": {
+          "type": "string"
+        },
+        "reviews_head_name": {
+          "type": "string"
+        },
+        "prod_code": {
+          "type": "string"
+        },
+        "eu_energy_label": {
+          "type": "string"
+        },
+        "eu_product_fiche": {
+          "type": "string"
+        },
+        "marketing_text": {
+          "type": "string"
+        },
+        "options_head_name": {
+          "type": "string"
+        },
+        "ean_code": {
+          "type": "string"
+        },
+        "reasons_to_buy": {
+          "type": "string"
+        },
+        "demo_msg_part3": {
+          "type": "string"
+        },
+        "video": {
+          "type": "string"
+        },
+        "demo_msg_part1": {
+          "type": "string"
+        },
+        "product_family": {
+          "type": "string"
+        },
+        "html_content": {
+          "type": "string"
+        },
+        "zoom_panel_out": {
+          "type": "string"
+        },
+        "zoom_panel_in": {
+          "type": "string"
+        },
+        "product_series": {
+          "type": "string"
+        },
+        "demo_insert_desc": {
+          "type": "string"
+        },
+        "supplier_name": {
+          "type": "string"
+        },
+        "pdf_url": {
+          "type": "string"
+        },
+        "flash360": {
+          "type": "string"
+        },
+        "cat_name": {
+          "type": "string"
+        },
+        "zoom_panel_init": {
+          "type": "string"
+        },
+        "pdf_specs": {
+          "type": "string"
+        },
+        "back_to_top": {
+          "type": "string"
+        },
+        "desc": {
+          "type": "string"
+        },
+        "demo_msg_part2": {
+          "type": "string"
+        }
+      }
+    },
+    "GeneralInfo": {
+      "type": "object",
+      "properties": {
+        "IcecatId": {
+          "type": "number"
+        },
+        "ReleaseDate": {
+          "type": "string"
+        },
+        "EndOfLifeDate": {
+          "type": "string"
+        },
+        "Title": {
+          "type": "string"
+        },
+        "TitleInfo": {
+          "type": "object",
+          "properties": {
+            "GeneratedIntTitle": {
+              "type": "string"
+            },
+            "GeneratedLocalTitle": {
+              "type": "object",
+              "properties": {
+                "Value": {
+                  "type": "string"
+                },
+                "Language": {
+                  "type": "string"
+                }
+              }
+            },
+            "BrandLocalTitle": {
+              "type": "object",
+              "properties": {
+                "Value": {
+                  "type": "string"
+                },
+                "Language": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "Brand": {
+          "type": "string"
+        },
+        "BrandID": {
+          "type": "string"
+        },
+        "BrandLogo": {
+          "type": "string"
+        },
+        "BrandInfo": {
+          "type": "object",
+          "properties": {
+            "BrandName": {
+              "type": "string"
+            },
+            "BrandLocalName": {
+              "type": "string"
+            },
+            "BrandLogo": {
+              "type": "string"
+            }
+          }
+        },
+        "ProductName": {
+          "type": "string"
+        },
+        "ProductNameInfo": {
+          "type": "object",
+          "properties": {
+            "ProductIntName": {
+              "type": "string"
+            },
+            "ProductLocalName": {
+              "type": "object",
+              "properties": {
+                "Value": {
+                  "type": "string"
+                },
+                "Language": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "BrandPartCode": {
+          "type": "string"
+        },
+        "GTIN": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "Category": {
+          "type": "object",
+          "properties": {
+            "CategoryID": {
+              "type": "string"
+            },
+            "Name": {
+              "type": "object",
+              "properties": {
+                "Value": {
+                  "type": "string"
+                },
+                "Language": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "ProductFamily": {
+          "type": "object",
+          "properties": {
+            "ProductFamilyID": {
+              "type": "string"
+            },
+            "Value": {
+              "type": "string"
+            },
+            "Language": {
+              "type": "string"
+            }
+          }
+        },
+        "ProductSeries": {
+          "type": "object",
+          "properties": {
+            "SeriesID": {
+              "type": "string"
+            },
+            "Value": {
+              "type": "string"
+            },
+            "Language": {
+              "type": "string"
+            }
+          }
+        },
+        "Description": {
+          "type": "object",
+          "properties": {},
+          "required": []
+        },
+        "SummaryDescription": {
+          "type": "object",
+          "properties": {
+            "ShortSummaryDescription": {
+              "type": "string"
+            },
+            "LongSummaryDescription": {
+              "type": "string"
+            }
+          }
+        },
+        "BulletPoints": {
+          "type": "object",
+          "properties": {},
+          "required": []
+        },
+        "GeneratedBulletPoints": {
+          "type": "object",
+          "properties": {
+            "Language": {
+              "type": "string"
+            },
+            "Values": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    },
+    "Image": {
+      "type": "object",
+      "properties": {
+        "HighPic": {
+          "type": "string"
+        },
+        "HighPicSize": {
+          "type": "string"
+        },
+        "HighPicHeight": {
+          "type": "string"
+        },
+        "HighPicWidth": {
+          "type": "string"
+        },
+        "LowPic": {
+          "type": "string"
+        },
+        "LowPicSize": {
+          "type": "string"
+        },
+        "LowPicHeight": {
+          "type": "string"
+        },
+        "LowPicWidth": {
+          "type": "string"
+        },
+        "Pic500x500": {
+          "type": "string"
+        },
+        "Pic500x500Size": {
+          "type": "string"
+        },
+        "Pic500x500Height": {
+          "type": "string"
+        },
+        "Pic500x500Width": {
+          "type": "string"
+        },
+        "ThumbPic": {
+          "type": "string"
+        },
+        "ThumbPicSize": {
+          "type": "string"
+        }
+      }
+    },
+    "Multimedia": {
+      "type": "array",
+      "items": {}
+    },
+    "Gallery": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "ID": {
+            "type": "string"
+          },
+          "LowPic": {
+            "type": "string"
+          },
+          "LowSize": {
+            "type": "string"
+          },
+          "LowHeight": {
+            "type": "string"
+          },
+          "LowWidth": {
+            "type": "string"
+          },
+          "ThumbPic": {
+            "type": "string"
+          },
+          "ThumbPicSize": {
+            "type": "string"
+          },
+          "Pic": {
+            "type": "string"
+          },
+          "Size": {
+            "type": "string"
+          },
+          "PicHeight": {
+            "type": "string"
+          },
+          "PicWidth": {
+            "type": "string"
+          },
+          "Pic500x500": {
+            "type": "string"
+          },
+          "Pic500x500Size": {
+            "type": "string"
+          },
+          "Pic500x500Height": {
+            "type": "string"
+          },
+          "Pic500x500Width": {
+            "type": "string"
+          },
+          "No": {
+            "type": "string"
+          },
+          "IsMain": {
+            "type": "string"
+          },
+          "Updated": {
+            "type": "string"
+          },
+          "IsPrivate": {
+            "type": "string"
+          },
+          "Type": {
+            "type": "string"
+          },
+          "Attributes": {
+            "type": "object",
+            "properties": {
+              "OriginalFileName": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    },
+    "FeaturesGroups": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "ID": {
+            "type": "number"
+          },
+          "SortNo": {
+            "type": "string"
+          },
+          "FeatureGroup": {
+            "type": "object",
+            "properties": {
+              "ID": {
+                "type": "string"
+              },
+              "Name": {
+                "type": "object",
+                "properties": {
+                  "Value": {
+                    "type": "string"
+                  },
+                  "Language": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          },
+          "Features": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "Localized": {
+                  "type": "number"
+                },
+                "ID": {
+                  "type": "number"
+                },
+                "LocalID": {
+                  "type": "number"
+                },
+                "Type": {
+                  "type": "string"
+                },
+                "Value": {
+                  "type": "string"
+                },
+                "CategoryFeatureId": {
+                  "type": "string"
+                },
+                "CategoryFeatureGroupID": {
+                  "type": "string"
+                },
+                "SortNo": {
+                  "type": "string"
+                },
+                "PresentationValue": {
+                  "type": "string"
+                },
+                "RawValue": {
+                  "type": "string"
+                },
+                "LocalValue": {
+                  "type": "string"
+                },
+                "Description": {
+                  "type": "string"
+                },
+                "Mandatory": {
+                  "type": "string"
+                },
+                "Searchable": {
+                  "type": "string"
+                },
+                "Optional": {
+                  "type": "string"
+                },
+                "Feature": {
+                  "type": "object",
+                  "properties": {
+                    "ID": {
+                      "type": "string"
+                    },
+                    "Sign": {
+                      "type": "string"
+                    },
+                    "Measure": {
+                      "type": "object",
+                      "properties": {
+                        "ID": {
+                          "type": "string"
+                        },
+                        "Sign": {
+                          "type": "string"
+                        },
+                        "Signs": {
+                          "type": "object",
+                          "properties": {
+                            "ID": {
+                              "type": "string"
+                            },
+                            "_": {
+                              "type": "string"
+                            },
+                            "Language": {
+                              "type": "string"
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "Name": {
+                      "type": "object",
+                      "properties": {
+                        "Value": {
+                          "type": "string"
+                        },
+                        "Language": {
+                          "type": "string"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "FeatureLogos": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "LogoPic": {
+            "type": "string"
+          },
+          "Width": {
+            "type": "string"
+          },
+          "Height": {
+            "type": "string"
+          },
+          "Size": {
+            "type": "string"
+          },
+          "ThumbPic": {
+            "type": "string"
+          },
+          "FeatureID": {
+            "type": "string"
+          },
+          "Value": {
+            "type": "string"
+          },
+          "KeyLogo": {
+            "type": "number"
+          },
+          "Description": {
+            "type": "object",
+            "properties": {
+              "Value": {
+                "type": "string"
+              },
+              "Language": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    },
+    "ReasonsToBuy": {
+      "type": "array",
+      "items": {}
+    },
+    "Reviews": {
+      "type": "array",
+      "items": {}
+    },
+    "TaxonomyDescriptions": {
+      "type": "array",
+      "items": {}
+    },
+    "ProductRelated": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "ID": {
+            "type": "number"
+          },
+          "CategoryID": {
+            "type": "number"
+          },
+          "Preferred": {
+            "type": "number"
+          },
+          "IcecatID": {
+            "type": "number"
+          },
+          "ProductCode": {
+            "type": "string"
+          },
+          "ThumbPic": {
+            "type": "string"
+          },
+          "ProductName": {
+            "type": "string"
+          },
+          "Brand": {
+            "type": "string"
+          },
+          "BrandID": {
+            "type": "number"
+          },
+          "ProductRelatedLocales": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "ID": {
+                  "type": "number"
+                },
+                "Language": {
+                  "type": "string"
+                },
+                "Preferred": {
+                  "type": "number"
+                },
+                "StartDate": {
+                  "type": "string"
+                },
+                "EndDate": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "Variants": {
+      "type": "array",
+      "items": {}
+    },
+    "ProductStory": {
+      "type": "array",
+      "items": {}
+    },
+    "DemoAccount": {
+      "type": "boolean"
+    }
+  }
+}
